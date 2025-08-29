@@ -10,7 +10,7 @@ function App() {
   // useEffect runs once when the component first loads
   useEffect(() => {
     // Fetch the data from our back-end API
-    fetch('http://localhost:3001/api/message')
+    fetch('https://my-first-backend-qvcc.onrender.com/api/message')
       .then(res => res.json()) // Parse the response as JSON
       .then(data => setMessage(data.message)); // Update the state with the message
   }, []); // The empty array means this effect runs only once
